@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/picsumGalleryFragment">
+
+    <fragment
+        android:id="@+id/picsumGalleryFragment"
+        android:name="com.experiment.android.picsumgallery.ui.gallery.PicsumGalleryFragment"
+        android:label="PICSUM GALLERY"
+        tools:layout="@layout/fragment_picsum_gallery">
+        <action
+            android:id="@+id/action_picsumGalleryFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.experiment.android.picsumgallery.ui.details.DetailsFragment"
+        android:label="DETAILS"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="dataModel"
+            app:argType="com.experiment.android.picsumgallery.model.PicsumResponse" />
+        <action
+            android:id="@+id/action_detailsFragment_to_picsumGalleryFragment"
+            app:destination="@id/picsumGalleryFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/picsumGalleryFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.experiment.android.picsumgallery.ui.about.AboutFragment"
+        android:label="ABOUT"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_right"
+        app:popExitAnim="@anim/slide_out_right"
+        tools:layout="@layout/fragment_about" />
+</navigation>

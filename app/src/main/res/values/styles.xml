@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Picsum.Toolbar.ToolbarBarStyle" parent="">
+        <item name="android:background">@color/colorSecondary</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/Widget.Picsum.TextAppearance.ToolbarTextAppearance
+        </item>
+    </style>
+
+    <style name="Widget.Picsum.TextAppearance.ToolbarTextAppearance" parent="">
+        <item name="android:textColor">@color/colorOnSecondary</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">@dimen/padding_5dp</item>
+        <item name="android:fontFamily">@font/arsenal_bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.Picsum.TextView.ListItemTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:fontFamily">@font/arsenal</item>
+        <item name="android:padding">@dimen/padding_5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+    </style>
+
+    <style name="Widget.Picsum.TextView.ErrorTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="android:fontFamily">@font/arsenal</item>
+        <item name="android:padding">@dimen/padding_10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+    </style>
+</resources>

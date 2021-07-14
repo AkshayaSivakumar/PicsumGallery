@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10dp">
+
+    <com.experiment.android.picsumgallery.utils.customcomponents.CustomDottedProgressBar
+        android:id="@+id/custom_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_msg_error"
+        style="@style/Widget.Picsum.TextView.ErrorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4dp"
+        android:gravity="center"
+        android:padding="@dimen/padding_5dp"
+        android:text="@string/network_error" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_retry"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_10dp"
+        android:text="@string/retry"
+        android:textSize="@dimen/text_size_16sp" />
+
+</LinearLayout>
